@@ -41,7 +41,7 @@ There are 302 samples of **NTU RGB+D 60** need to be ignored, which are shown in
 
 Several pretrained models are provided, which include **baseline**, **2-stream RA-GCN** and **3-stream RA-GCN** for the **cross-subject (CS)** and **cross-view (CV)** benchmarks of the **NTU RGB+D 60** dataset and the **cross-subject (CSub)** and **cross-setup (CSet)** benchmarks of the **NTU RGB+D 120** dataset. The baseline model also means 1-stream RA-GCN.
 
-These models can be downloaded from [BaiduYun](https://pan.baidu.com/s/1zrNPGD5eqo2dK00k8fFh1Q) (Extract code: s9kt) or 
+These models can be downloaded from [BaiduYun](https://pan.baidu.com/s/1zrNPGD5eqo2dK00k8fFh1Q) (Extract code: **s9kt**) or 
 [GoogleDrive](https://drive.google.com/drive/folders/1R4db_OWhIKqlt_CN9fwupX9LAFKZeZwP?usp=sharing).
 
 You should put these models into the **'models'** folder.
@@ -77,7 +77,7 @@ Other parameters can be updated by modifying the corresponding config file in th
 
 Before training or testing our model, please generate datasets first by using **'gen_data.py'** in the current folder.
 
-In this file, two parameters are required to modify, which are **'folder1'** and **'folder2'**. You should change them to your path to **NTU RGB+D** datasets, e.g., `/data1/yifan.song/NTU_RGBD/nturgbd_skeletons_s001_to_s017/` for **NTU RGB+D 60** and `/data1/yifan.song/NTU_RGBD/nturgbd_skeletons_s018_to_s032/` for **NTU RGB+D 120**.
+In this file, two parameters are required to be modified, which are **'folder1'** and **'folder2'**. You should change them to your path to **NTU RGB+D** datasets, e.g., `/data1/yifan.song/NTU_RGBD/nturgbd_skeletons_s001_to_s017/` for **NTU RGB+D 60** and `/data1/yifan.song/NTU_RGBD/nturgbd_skeletons_s018_to_s032/` for **NTU RGB+D 120**.
 
 Then, you can generate datasets by
 ```
