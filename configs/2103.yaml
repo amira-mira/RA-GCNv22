@@ -9,7 +9,7 @@ visualize_stream: 0
 visualize_frames: []
 
 # Data Loader
-subset: 'cs'
+subset: 'cset'
 max_frame: 300
 batch_size: 16
 data_transform: True

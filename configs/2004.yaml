@@ -9,15 +9,15 @@ visualize_stream: 0
 visualize_frames: []
 
 # Data Loader
-subset: 'cs'
+subset: 'cv'
 max_frame: 300
 batch_size: 16
 data_transform: True
 
 # Model
 pretrained: True
-model_stream: 2
-gcn_kernel_size: [5,2]
+model_stream: 3
+gcn_kernel_size: [9,3]
 drop_prob: 0.5
 
 # Optimizer
