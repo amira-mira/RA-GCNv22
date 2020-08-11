@@ -1,0 +1,3 @@
+pyyaml
+seaborn
+nvidia-ml-py3
