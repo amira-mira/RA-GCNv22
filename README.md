@@ -41,7 +41,7 @@ There are 302 samples of **NTU RGB+D 60** need to be ignored, which are shown in
 
 Several pretrained models are provided, which include **baseline**, **2-stream RA-GCN** and **3-stream RA-GCN** for the **cross-subject (CS)** and **cross-view (CV)** benchmarks of the **NTU RGB+D 60** dataset and the **cross-subject (CSub)** and **cross-setup (CSet)** benchmarks of the **NTU RGB+D 120** dataset. The baseline model also means 1-stream RA-GCN.
 
-These models can be downloaded from [BaiduYun](https://pan.baidu.com/s/1zrNPGD5eqo2dK00k8fFh1Q) (Extract code: **s9kt**) or 
+These models can be downloaded from [BaiduYun]() (Extraction code: **s9kt**) or 
 [GoogleDrive](https://drive.google.com/drive/folders/1R4db_OWhIKqlt_CN9fwupX9LAFKZeZwP?usp=sharing).
 
 You should put these models into the **'models'** folder.
