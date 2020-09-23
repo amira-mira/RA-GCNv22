@@ -135,7 +135,7 @@ Top-1 Accuracy for the provided models on **NTU RGB+D 60 & 120** datasets.
 | NTU CS   | 87.3%     | 86.7%     | 85.8%    | 85.9%       |
 | NTU CV   | 93.6%     | 93.4%     | 93.1%    | 93.5%       |
 | NTU CSub | 81.1%     | 81.0%     | 78.2%    | 74.4%       |
-| NTU CVet | 82.7%     | 82.5%     | 80.0%    | 79.4%       |
+| NTU CSet | 82.7%     | 82.5%     | 80.0%    | 79.4%       |
 
 ### 5.2 Occlusion and Jittering Experiments
 
