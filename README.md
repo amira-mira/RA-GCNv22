@@ -58,14 +58,14 @@ Before training and evaluating, there are some parameters should be noticed.
 | model     | 2s RA-GCN | 3s RA-GCN | 2s RA-GCN | 3s RA-GCN | 2s RA-GCN | 3s RA-GCN | 2s RA-GCN | 3s RA-GCN |
 | benchmark | CS        | CS        | CV        | CV        | CSub      | CSub      | CSet      | CSet      |
 
-* (3) **'--resume'** or **'-r'**: Resume from checkpoint. If you want to start training from a saved checkpoint in the **'models'** folder, you can add this parameter to the command line.
+* (2) **'--resume'** or **'-r'**: Resume from checkpoint. If you want to start training from a saved checkpoint in the **'models'** folder, you can add this parameter to the command line.
 
-* (4) **'--evaluate'** or **'-e'**: Only evaluate trained models. For evaluating, you should add this parameter to the command line. The evaluating model will be seleted by the **'--config'** parameter.
+* (3) **'--evaluate'** or **'-e'**: Only evaluate trained models. For evaluating, you should add this parameter to the command line. The evaluating model will be seleted by the **'--config'** parameter.
 
-* (5) **'--extract'** or **'-ex'**: Extract features from a trained model for visualization. 
+* (4) **'--extract'** or **'-ex'**: Extract features from a trained model for visualization. 
 Using this parameter will make a data file named **'visualize.npz'** at the current folder.
 
-* (6) **'--visualization'** or **'-v'**: Show the information and details of a trained model. 
+* (5) **'--visualization'** or **'-v'**: Show the information and details of a trained model. 
 You should extract features by using **'--extract'** parameter before visualizing.
 
 Other parameters can be updated by modifying the corresponding config file in the **'configs'** folder or using command line to send parameters to the model, and the parameter priority is **command line > yaml config > default value**.
