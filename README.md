@@ -156,11 +156,10 @@ Please cite our paper when you use this code in your reseach.
   year         = {2019},
 }
 
-@InProceedings{song2020richly,
-  title        = {Richly Activated Graph Convolutional Network for Robust Skeleton-based Action Recognition},
-  author       = {Yi-Fan Song and Zhang Zhang and Caifeng Shan and Liang Wang},
-  booktitle    = {IEEE Transaction on Circuits and Systems for Video Technology (TCSVT)},
-  organization = {IEEE},
-  year         = {2020},
+@Article{song2020richly,
+  title   = {Richly Activated Graph Convolutional Network for Robust Skeleton-based Action Recognition}, 
+  author  = {Yi-Fan Song and Zhang Zhang and Caifeng Shan and Liang Wang},
+  journal = {IEEE Transactions on Circuits and Systems for Video Technology}, 
+  year    = {2020},
 }
 ```
