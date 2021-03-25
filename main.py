@@ -12,8 +12,8 @@ def main():
 
     # Update parameters by yaml
     args = parser.parse_args()
-    if os.path.exists('./configs/' + args.config + '.yaml'):
-        with open('./configs/' + args.config + '.yaml', 'r') as f:
+    if os.path.exists('/home/aayadi/RA-GCNv22/configs/' + args.config + '.yaml'):
+        with open('/home/aayadi/RA-GCNv22/configs/' + args.config + '.yaml', 'r') as f:
             yaml_arg = yaml.load(f, Loader=yaml.FullLoader)
             default_arg = vars(args)
             for k in yaml_arg.keys():
