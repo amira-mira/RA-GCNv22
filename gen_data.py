@@ -11,12 +11,12 @@ def main():
 def gen_ntu60(folder):
     files = os.listdir(folder)
 
-    f_cs_train = open('./datasets/cs_train.txt','w')
-    f_cv_train = open('./datasets/cv_train.txt','w')
-    f_cs_eval = open('./datasets/cs_eval.txt','w')
-    f_cv_eval = open('./datasets/cv_eval.txt','w')
+    f_cs_train = open('/home/aayadi/RA-GCNv22/datasets/cs_train.txt','w')
+    f_cv_train = open('/home/aayadi/RA-GCNv22/datasets/cv_train.txt','w')
+    f_cs_eval = open('/home/aayadi/RA-GCNv22/datasets/cs_eval.txt','w')
+    f_cv_eval = open('/home/aayadi/RA-GCNv22/datasets/cv_eval.txt','w')
 
-    f_ignore = open('./datasets/ignore60.txt','r')
+    f_ignore = open('/home/aayadi/RA-GCNv22/datasets/ignore60.txt','r')
     ignore_names = f_ignore.readlines()
     ignore_names = [name.strip() for name in ignore_names]
     f_ignore.close()
@@ -47,15 +47,15 @@ def gen_ntu60(folder):
 def gen_ntu120(folder1, folder2):
     files1 = os.listdir(folder1)
     files2 = os.listdir(folder2)
-    f_ignore = open('./datasets/ignore120.txt','r')
+    f_ignore = open('/home/aayadi/RA-GCNv22/datasets/ignore120.txt','r')
     ignore_names = f_ignore.readlines()
     ignore_names = [name.strip() for name in ignore_names]
     f_ignore.close()
 
-    f_csub_train = open('./datasets/csub_train.txt','w')
-    f_cset_train = open('./datasets/cset_train.txt','w')
-    f_csub_eval = open('./datasets/csub_eval.txt','w')
-    f_cset_eval = open('./datasets/cset_eval.txt','w')
+    f_csub_train = open('/home/aayadi/RA-GCNv22/datasets/csub_train.txt','w')
+    f_cset_train = open('/home/aayadi/RA-GCNv22/datasets/cset_train.txt','w')
+    f_csub_eval = open('/home/aayadi/RA-GCNv22/datasets/csub_eval.txt','w')
+    f_cset_eval = open('/home/aayadi/RA-GCNv22/datasets/cset_eval.txt','w')
 
     write_files(files1, f_csub_train, f_cset_train, f_csub_eval, f_cset_eval, ignore_names, folder1)
     write_files(files2, f_csub_train, f_cset_train, f_csub_eval, f_cset_eval, ignore_names, folder2)
