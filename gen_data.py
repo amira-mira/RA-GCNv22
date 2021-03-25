@@ -2,8 +2,8 @@ import os
 
 
 def main():
-    folder1 = 'nturgbd_skeletons_s001_to_s017/'
-    folder2 = 'NTU_RGBD/nturgbd_skeletons_s018_to_s032/'
+    folder1 = '/home/aayadi/nturgbd_skeletons_s001_to_s017/'
+    folder2 = '/home/aayadiNTU_RGBD/nturgbd_skeletons_s018_to_s032/'
     gen_ntu60(folder1)
     gen_ntu120(folder1, folder2)
 
