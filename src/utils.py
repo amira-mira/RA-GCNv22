@@ -23,7 +23,7 @@ def check_gpu(gpus):
 
 
 def load_checkpoint(fname='checkpoint'):
-    fpath = '/home/aayadi/RA-GCNv22/models/' + fname + '.pth.tar'
+    fpath = '/home/aayadi/projet/RA-GCNv22/models/' + fname + '.pth.tar'
     if os.path.isfile(fpath):
         checkpoint = torch.load(fpath)
         return checkpoint
@@ -32,14 +32,14 @@ def load_checkpoint(fname='checkpoint'):
 
 
 def save_checkpoint(model, optimizer, epoch, best, is_best, model_name):
-    if not os.path.exists('/home/aayadi/RA-GCNv22/models'):
-        os.mkdir('/home/aayadi/RA-GCNv22/models')
+    if not os.path.exists('/home/aayadi/projet/RA-GCNv22/models'):
+        os.mkdir('/home/aayadi/projet/RA-GCNv22/models')
     for key in model.keys():
         model[key] = model[key].cpu()
     checkpoint = {'model':model, 'optimizer':optimizer, 'epoch':epoch, 'best':best}
-    torch.save(checkpoint, '/home/aayadi/RA-GCNv22/models/checkpoint.pth.tar')
+    torch.save(checkpoint, '/home/aayadi/projet/RA-GCNv22/models/checkpoint.pth.tar')
     if is_best:
-        shutil.copy('/home/aayadi/RA-GCNv22/models/checkpoint.pth.tar', '/home/aayadi/RA-GCNv22/models/' + model_name + '.pth.tar')
+        shutil.copy('/home/aayadi/projet/RA-GCNv22/models/checkpoint.pth.tar', '/home/aayadi/projet/RA-GCNv22/models/' + model_name + '.pth.tar')
 
 
 def str2bool(v):
