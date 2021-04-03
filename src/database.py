@@ -11,7 +11,7 @@ class NTU(Dataset):
         self.maxC, self.maxT, self.maxV, self.maxM = data_shape
         self.transform = transform
 
-        file = '/home/aayadi/RA-GCNv22/datasets/' + setting + '_' + type + '.txt'
+        file = '/home/aayadi/projet/RA-GCNv22/datasets/' + setting + '_' + type + '.txt'
         if not os.path.exists(file):
             raise ValueError('Please generate data first! Using gen_data.py in the main folder.')
 
